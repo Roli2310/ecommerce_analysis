@@ -17,7 +17,7 @@ Ziel ist es, das Kaufverhalten von 350 Kunden zu entschlüsseln, Umsatztreiber z
 ## ⚙️ Pipeline & Umsetzung
 
 ### 1. Datenbereinigung & Feature Engineering (Python)
-* **EDA & Datenbereinigung:** Einlesen der Rohdaten (`E-commerce Customer Behavior - Sheet1.csv`), Bereinigen von Null-Values im Feld `satisfaction_level` und Vereinheitlichung der Spaltennamen (*snake_case*).
+* **EDA & Datenbereinigung:** Einlesen der Rohdaten (`E-commerce Customer Behavior - Sheet1.csv`), Bereinigen von Null-Values im Feld `satisfaction_level` und Vereinheitlichung der Spaltennamen.
 * **Klassifizierungen:** Erstellung neuer Features wie Altersgruppen (`age_group`) und die automatische Einteilung der Kunden in drei Kaufkraft-Klassen (`spending_level`) mittels Quantil-Splitting.
 
 ### 2. Relationale Speicherung (SQL)
@@ -35,13 +35,7 @@ Ziel ist es, das Kaufverhalten von 350 Kunden zu entschlüsseln, Umsatztreiber z
 * **Kundenbindung:** Im Median kaufen Kunden alle **23 Tage** ein. Inaktive Kunden (bis zu 63 Tage ohne Kauf) bieten direkte Hebel für gezielte Marketing-Retargeting-Kampagnen.
 * **Zufriedenheit:** Die durchschnittliche Bewertung liegt bei starken **4,02 von 5 Sternen**. Unzufriedene Kunden clustern sich primär im Bronze-Mitgliedschafts-Segment – ein klarer Ansatzpunkt für den Kundenservice.
 
----
 
-## 📁 Projektdateien
-* `E-commerce Customer Behavior - Sheet1.csv`: Der zugrundeliegende Rohdatensatz.
-* `ecommerce_analysis.ipynb`: Jupyter Notebook für die Datenbereinigung, Transformation und den SQL-Export.
-* `ecommerce_analysis.sql`: SQL-Skript mit den analytischen Abfragen zur Datenvalidierung.
-* `ecommerce_dashboard.pbix`: Die Power BI Datei inklusive Datenmodell und visuellem Dashboard.
 
 
 
